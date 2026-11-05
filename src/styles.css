@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #10131a;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  box-shadow: 0 24px 80px rgba(16, 19, 26, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.mesh {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(13, 110, 253, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 12%, rgba(31, 41, 55, 0.12), transparent 24%),
+    linear-gradient(135deg, #ffffff 0%, #f4f7fb 48%, #ffffff 100%);
+}
+
+.section {
+  @apply mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-24;
+}
+
+.eyebrow {
+  @apply text-sm font-semibold uppercase tracking-[0.18em] text-brand-blue;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md bg-brand-blue px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-blue-600;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-brand-ink transition hover:-translate-y-0.5 hover:border-brand-blue hover:text-brand-blue;
+}
+
+.card {
+  @apply rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl;
+}

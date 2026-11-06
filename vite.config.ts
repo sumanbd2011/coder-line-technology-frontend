@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-const allowedHosts = ['coder-line-technology-frontend.onrender.com', '.onrender.com'];
+const allowedHosts = ['coder-line-technology-frontend.onrender.com', '.onrender.com','coderlinetechnology.com'];
 
 export default defineConfig({
   plugins: [react()],
